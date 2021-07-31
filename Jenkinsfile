@@ -9,11 +9,13 @@ pipeline
      stage("build"){
          steps{
              echo 'building the applecation...'
+             sh 'npm --version'
          }
      }
      stage("test"){
          steps{
               echo 'testing the applecation...'
+              sh 'maven --version'
          }
      }
      stage("deploy"){

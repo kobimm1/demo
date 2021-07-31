@@ -30,7 +30,7 @@ pipeline
           }
          steps{
               echo 'depolying the applecation...'
-          echo "Version number ${VERSION}"
+              echo "Version number ${VERSION}"
          }
      }
  }   

@@ -1,9 +1,11 @@
 pipeline
 {
  agent any
+ 
  parameters{
   string(name: MY_PARAM, defaultValue: "AAA!!!", description: "Example")
  }
+ 
  tools{
    maven 'Maven 3.8.1' 
    nodejs 'NodeJs-16.6.0'

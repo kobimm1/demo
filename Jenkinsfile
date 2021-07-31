@@ -10,7 +10,7 @@ pipeline
   FIRST_USER_CREDENTIALS = credentials('First-User')
  }
  parameters{
-  string(name: MY_PARAM, defalutValue: "AAA!!!", description: "Example")
+  string(name: MY_PARAM, defaultValue: "AAA!!!", description: "Example")
  }
  stages{
      stage("build"){

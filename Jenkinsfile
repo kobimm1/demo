@@ -3,7 +3,7 @@ pipeline
  agent any
  
  parameters{
-  string(name: MY_PARAM, defaultValue: "AAA!!!", description: "Example")
+  string(name: "MY_PARAM", defaultValue: "AAA!!!", description: "Example")
  }
  
  tools{

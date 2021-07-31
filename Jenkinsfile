@@ -7,6 +7,7 @@ pipeline
  }
  environment{
   NEW_VERSION = '1.3.0'
+  FIRST_USER_CREDENTIALS = credentials('First-User')
  }
  
  stages{
@@ -31,6 +32,7 @@ pipeline
          steps{
               echo 'depolying the applecation...'
               echo "Version number ${NEW_VERSION}"
+              echo "FIRST_USER_CREDENTIALS =  ${FIRST_USER_CREDENTIALS}"
          }
      }
  }   

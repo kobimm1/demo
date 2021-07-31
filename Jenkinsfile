@@ -35,7 +35,7 @@ pipeline
               echo 'depolying the applecation...'
               echo "Version number ${NEW_VERSION}"
               echo "FIRST_USER_CREDENTIALS =  ${FIRST_USER_CREDENTIALS}"
-              echo "MY_PARAM = ${MY_PARAM}"
+              echo "MY_PARAM = ${params.MY_PARAM}"
          }
      }
  }   

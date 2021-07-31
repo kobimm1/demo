@@ -1,6 +1,9 @@
 pipeline
 {
- agent any 
+ agent any
+ parameters{
+  string(name: MY_PARAM, defaultValue: "AAA!!!", description: "Example")
+ }
  tools{
    maven 'Maven 3.8.1' 
    nodejs 'NodeJs-16.6.0'
@@ -8,9 +11,6 @@ pipeline
  environment{
   NEW_VERSION = '1.3.0'
   FIRST_USER_CREDENTIALS = credentials('First-User')
- }
- parameters{
-  string(name: MY_PARAM, defaultValue: "AAA!!!", description: "Example")
  }
  stages{
      stage("build"){

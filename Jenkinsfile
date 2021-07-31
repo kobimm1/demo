@@ -6,7 +6,7 @@ pipeline
    nodejs 'NodeJs-16.6.0'
  }
  environment{
-  VERSION = 1.3.0
+  NEW_VERSION = 1.3.0
  }
  
  stages{

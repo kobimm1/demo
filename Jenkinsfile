@@ -1,3 +1,4 @@
+def gv
 pipeline
 {
  agent any
@@ -15,6 +16,13 @@ pipeline
   FIRST_USER_CREDENTIALS = credentials('First-User')
  }
  stages{
+     stage("init"){
+         steps{
+          script{
+            gv = load(FirstScript.groovy")
+          }
+         }
+     }
      stage("build"){
          steps{
              echo 'building the applecation...'

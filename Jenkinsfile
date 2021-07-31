@@ -9,7 +9,9 @@ pipeline
   NEW_VERSION = '1.3.0'
   FIRST_USER_CREDENTIALS = credentials('First-User')
  }
- 
+ parameters{
+  string(name: MY_PARAM, defalutValue: "AAA!!!", description: "Example")
+ }
  stages{
      stage("build"){
          steps{
@@ -33,6 +35,7 @@ pipeline
               echo 'depolying the applecation...'
               echo "Version number ${NEW_VERSION}"
               echo "FIRST_USER_CREDENTIALS =  ${FIRST_USER_CREDENTIALS}"
+              echo "MY_PARAM = ${MY_PARAM}"
          }
      }
  }   

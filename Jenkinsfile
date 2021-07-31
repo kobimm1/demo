@@ -20,6 +20,11 @@ pipeline
      }
      stage("deploy"){
          steps{
+          when {
+           expression{
+              BRANCH_NAME = 'dev'
+           }
+          }
               echo 'depolying the applecation...'
          }
      }

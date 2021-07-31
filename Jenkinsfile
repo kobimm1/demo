@@ -15,7 +15,7 @@ pipeline
      stage("test"){
          steps{
               echo 'testing the applecation...'
-              sh 'maven --version'
+              sh 'mvn --version'
          }
      }
      stage("deploy"){

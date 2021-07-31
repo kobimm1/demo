@@ -33,7 +33,6 @@ pipeline
               echo 'depolying the applecation...'
               echo "Version number ${NEW_VERSION}"
               echo "FIRST_USER_CREDENTIALS =  ${FIRST_USER_CREDENTIALS}"
-              sh "${FIRST_USER_CREDENTIALS}"
          }
      }
  }   

@@ -5,6 +5,10 @@ pipeline
    maven 'Maven 3.8.1' 
    nodejs 'NodeJs-16.6.0'
  }
+ environment{
+  VERSION = 1.3.0
+ }
+ 
  stages{
      stage("build"){
          steps{
@@ -26,6 +30,7 @@ pipeline
           }
          steps{
               echo 'depolying the applecation...'
+          echo "Version number ${VERSION}"
          }
      }
  }   
